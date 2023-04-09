@@ -1,0 +1,30 @@
+.footer{
+    &_widgetbox{
+        background-color: gainsboro;
+        display: flex;
+        justify-content: space-around;
+        padding: .5rem 0;
+        &-1{
+            // img{
+            //     height: 5rem;
+            // }
+        }
+        &-2{
+            flex-basis: 55%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        a:hover{
+            color: grey;
+        }
+    }
+    &_copyright{
+        background-color: gainsboro;
+        height: 1.7rem;
+        word-spacing: 2.5px;
+        letter-spacing: .6px;
+        font-size: .9rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
