@@ -1,7 +1,55 @@
-nav {
-    .nav {
-        &_logo {
-            
+.nav {
+    border: 1px solid white;
+    // position: relative;
+    display: flex;
+    background-color: #00081e;
+    height: 6.1rem;
+    align-items: center;
+    &_logo {
+        flex-basis: 20%;
+        img {
+            height: 6rem;
+        }
+    }
+
+    &_menu {
+        flex: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 100%;
+        padding-top: 2rem;
+        transition: 0.5s;
+
+        &-item {
+            a {
+                color: white;
+            }
+        }
+    }
+    .nav_menu-dropdown {
+        // overflow: hidden;
+        position: relative;
+        // display: inline-block;
+
+        &-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            min-width: 10.6rem;
+        }
+        &-dropdown-content a {
+            display: block;
+            padding: 5rem;
+            margin-left: 0rem;
+            color: #00081e;
+        }
+        &:hover .nav_menu-dropdown-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: #f9f9f9;
+            padding: .5rem 0rem;
         }
     }
 }
