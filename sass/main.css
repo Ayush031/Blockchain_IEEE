@@ -97,34 +97,3 @@ ul {
 .u-margin-bottom-big {
   margin-bottom: 8rem;
 }
-
-.section {
-  position: relative;
-}
-.section_headingbox {
-  text-align: center;
-  padding-top: 1rem;
-}
-.section_heading {
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 35px;
-  color: #673ab7;
-  font-weight: 700;
-  font-style: italic;
-}
-.section_heading-border {
-  margin-bottom: 1rem;
-}
-
-.slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 57vh;
-}
-.slide_heading {
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 1rem;
-}
