@@ -148,6 +148,26 @@ ul {
   text-align: justify;
 }
 
+.section2 {
+  border: 1.5px solid red;
+  height: 75vh;
+}
+
+#section2_body {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1.5px solid blue;
+}
+#section2_body .member_div {
+  flex-basis: 20%;
+  border: 1.5px solid green;
+}
+#section2_body .member_logo img {
+  height: 120px;
+  width: auto;
+  border-radius: 3rem;
+}
+
 .nav {
   display: flex;
   background-color: #00081e;

@@ -1,2 +1,25 @@
 // Team Members Section
-
+.section2 {
+    border: 1.5px solid red;
+    height: 75vh;
+}
+#section2 {
+    &_body {
+        display: flex;
+        justify-content: space-evenly;
+        border: 1.5px solid blue;
+        .member {
+            &_div {
+                flex-basis: 20%;
+                border: 1.5px solid green;
+            }
+            &_logo {
+                img {
+                    height: 120px;
+                    width: auto;
+                    border-radius: 3rem;
+                }
+            }
+        }
+    }
+}
