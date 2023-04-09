@@ -1,0 +1,19 @@
+nav {
+    .nav {
+        &_logo {
+            
+        }
+    }
+}
+
+.header {
+    position: relative;
+    height: fit-content;
+    top: 0px;
+    &_top {
+        background-color: #00081e;
+        &-title {
+            color: cyan;
+        }
+    }
+}
