@@ -49,3 +49,11 @@ ul {
     list-style: none;
 }
 
+.section {
+    // &_body {}
+    &_heading{
+        margin-top: 1rem;
+        font-size: 3.4rem;
+        text-align: center;
+    }
+}
