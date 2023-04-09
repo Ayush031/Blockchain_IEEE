@@ -1,8 +1,8 @@
 .section1 {
     overflow: hidden;
     position: relative;
-    height: 75vh;
-
+    height: 80vh;
+    margin-bottom: 5rem;
     // &_heading {
     // below added in base.scss globally
     // font-size: 3.4rem;
@@ -16,6 +16,7 @@
         height: 80%;
         padding: 0 2rem;
         &-card {
+            margin-top: 3rem;
             height: 86%;
             display: flex;
             flex-direction: column;

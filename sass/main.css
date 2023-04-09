@@ -108,7 +108,8 @@ ul {
 .section1 {
   overflow: hidden;
   position: relative;
-  height: 75vh;
+  height: 80vh;
+  margin-bottom: 5rem;
 }
 .section1_body {
   display: flex;
@@ -118,6 +119,7 @@ ul {
   padding: 0 2rem;
 }
 .section1_body-card {
+  margin-top: 3rem;
   height: 86%;
   display: flex;
   flex-direction: column;
@@ -149,23 +151,56 @@ ul {
 }
 
 .section2 {
-  border: 1.5px solid red;
-  height: 75vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0d2141;
+  padding-bottom: 2rem;
 }
-
-#section2_body {
+.section2_heading {
+  flex-basis: 20%;
+  color: whitesmoke;
+}
+.section2 #section2_body {
+  flex-basis: 80%;
   display: flex;
   justify-content: space-evenly;
-  border: 1.5px solid blue;
+  align-items: center;
 }
-#section2_body .member_div {
+.section2 #section2_body .member_div {
+  border-radius: 0.4rem;
   flex-basis: 20%;
-  border: 1.5px solid green;
+  padding: 4rem 1.5rem 2.5rem 1.5rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  transition: all 0.3s;
 }
-#section2_body .member_logo img {
-  height: 120px;
+.section2 #section2_body .member_div:hover {
+  transform: scale(1.02);
+  box-shadow: 0.1rem 0rem 0.5rem 0rem cyan;
+}
+.section2 #section2_body .member_div-logo {
+  flex-basis: 30%;
+  margin-bottom: 2rem;
+}
+.section2 #section2_body .member_div-logo img {
+  height: 110px;
   width: auto;
-  border-radius: 3rem;
+  border-radius: 4rem;
+}
+.section2 #section2_body .member_div-about {
+  flex-basis: 60%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.section2 #section2_body .member_div-about p {
+  font-weight: 400;
+  margin-top: 0.4rem;
+  font-size: 1.05rem;
 }
 
 .nav {

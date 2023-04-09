@@ -1,23 +1,55 @@
 // Team Members Section
 .section2 {
-    border: 1.5px solid red;
-    height: 75vh;
-}
-#section2 {
-    &_body {
-        display: flex;
-        justify-content: space-evenly;
-        border: 1.5px solid blue;
-        .member {
-            &_div {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0d2141;
+    padding-bottom: 2rem;
+    &_heading {
+        flex-basis: 20%;
+        color: whitesmoke;
+    }
+
+    #section2 {
+        &_body {
+            flex-basis: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .member_div {
+                border-radius: 0.4rem;
                 flex-basis: 20%;
-                border: 1.5px solid green;
-            }
-            &_logo {
-                img {
-                    height: 120px;
-                    width: auto;
-                    border-radius: 3rem;
+                padding: 4rem 1.5rem 2.5rem 1.5rem;
+                background-color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                text-align: center;
+                transition: all .3s;
+                &:hover {
+                    transform: scale(1.02);
+                    box-shadow: 0.1rem 0rem 0.5rem 0rem cyan;
+                }
+                &-logo {
+                    flex-basis: 30%;
+                    img {
+                        height: 110px;
+                        width: auto;
+                        border-radius: 4rem;
+                    }
+                    margin-bottom: 2rem;
+                }
+                &-about {
+                    flex-basis: 60%;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    p {
+                        font-weight: 400;
+                        margin-top: 0.4rem;
+                        font-size: 1.05rem;
+                    }
                 }
             }
         }
