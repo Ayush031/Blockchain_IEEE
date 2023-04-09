@@ -1,14 +1,14 @@
 .nav {
-    border: 1px solid white;
     // position: relative;
     display: flex;
     background-color: #00081e;
-    height: 6.1rem;
+    // background-color: #005820;
+    height: 6rem;
     align-items: center;
     &_logo {
         flex-basis: 20%;
         img {
-            height: 6rem;
+            height: 6.2rem;
         }
     }
 
@@ -49,19 +49,56 @@
             flex-direction: column;
             justify-content: space-evenly;
             background-color: #f9f9f9;
-            padding: .5rem 0rem;
+            padding: 0.5rem 0rem;
         }
     }
 }
 
 .header {
+    // border: 1px solid RED;
     position: relative;
-    height: fit-content;
-    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00081e;
+    height: 70vh;
+    padding: 0rem 5rem 5rem 5rem;
     &_top {
-        background-color: #00081e;
+        flex-basis: 50%;
         &-title {
-            color: cyan;
+            margin-bottom: 3rem;
+            color: whitesmoke;
+            margin-top: 2rem;
+            &-1 {
+                font-size: 3rem;
+            }
+            &-2 {
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    &_btn {
+        a {
+            padding: .8rem;
+            background-color: cyan;
+            color: black;
+            font-size: 1.05rem;
+            font-weight: 500;
+            border-radius: .5rem;
+        }
+        a:hover {
+            background-color: #46D5E7;
+        }
+    }
+    
+    &_bottom {
+        flex-basis: 40%;
+        // &-imgdiv {}
+        &-img {
+            width: 100%;
+            height: auto;
         }
     }
 }
